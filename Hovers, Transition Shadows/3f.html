@@ -1,0 +1,74 @@
+<!-- Lesson 2 Exercises - CSS Basics -->
+<style>
+    a {
+        color: rgb(0, 113, 133);
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .in-stock {
+        color: rgb(0, 118, 0);
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .cart {
+        background-color: rgb(255, 216, 20);
+        height: 30px;
+        width: 100px;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        font-weight: medium;
+
+        transition: background-color 0.15s, opacity 0.15s;
+    }
+    
+    .cart:hover {
+        background-color: rgb(233, 194, 0);
+    }
+    
+    .cart:active {
+        opacity: 0.4;
+    }
+    
+    .buy {
+        background-color: rgb(255, 164, 28);
+        height: 30px;
+        width: 100px;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        font-weight: medium;
+        margin-left: 6px;
+        transition: background-color 0.15s, opacity 0.15s;
+    }
+    
+    .buy:hover {
+    background-color: rgb(238, 145, 5);
+    }
+    
+    .buy:active {
+        opacity: 0.4;
+    }
+</style>
+
+<a href="https://www.amazon.com">
+    Back to Amazon
+</a>
+
+<h1>Nike Black Running Shoes</h1>
+
+<p class="in-stock">$39 - in stock.</p>
+
+<p class="promo">Free delivery tomorrow.</p>
+
+<a href="">
+    <button class="cart">Add to Cart</button>
+</a>
+
+<a href="">
+    <button class="buy">Buy now</button>
+</a>
