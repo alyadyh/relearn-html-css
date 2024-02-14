@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>.grid {
+        display: grid;
+
+        /* take up the entire space */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        /* space between column */
+        column-gap: 20px;
+
+        /* space between rows */
+        row-gap: 10px;
+      }
+      
+      .lightpink {
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+    </div>
+  </body>
+</html>

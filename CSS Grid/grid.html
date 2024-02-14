@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .space {
+            height: 10px;
+        }
+
+        /* css grid */
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; /* 3 kolom dengan lebar yang sama */
+          grid-gap: 10px; /* Jarak antara item */
+        }
+
+        .grid-item {
+          background-color: #ddd;
+          padding: 20px;
+          text-align: center;
+        }
+
+        /* flexbox */
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }      
+
+        .flex-item {
+          background-color: #ddd;
+          text-align: center;
+          padding: 20px;
+          flex: 1 0 30%;
+          max-width: calc(33.33% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+    </div>
+
+    <div class="space"></div>
+    
+    <div class="flex-container">
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
+    </div>
+</body>
+</html>
