@@ -9,6 +9,9 @@
     left: 0;
     right: 0;
 
+    /* z-index = 100 to put on top, cuz it's greater than 0 */
+    z-index: 100; /* to decide wether the element is put on top of other or below */
+
     background-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
