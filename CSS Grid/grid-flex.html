@@ -28,14 +28,15 @@
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
+          flex-direction: row;
+          margin-top: 30px;
         }      
 
         .flex-item {
           background-color: #ddd;
           text-align: center;
           padding: 20px;
-          flex: 1 0 30%;
-          max-width: calc(33.33% - 20px);
+          flex: 1;
         }
     </style>
 </head>
@@ -45,8 +46,6 @@
       <div class="grid-item">Item 2</div>
       <div class="grid-item">Item 3</div>
     </div>
-
-    <div class="space"></div>
     
     <div class="flex-container">
         <div class="flex-item">Item 4</div>
